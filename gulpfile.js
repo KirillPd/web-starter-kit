@@ -73,6 +73,13 @@
   });
 
   /**
+   * Lint Scss
+   */
+  requireTask(`${cfg.task.scssLint}`, `./${cfg.folder.tasks}/`, {
+    src: cfg.folder.src
+  });
+
+  /**
    * Build custom js
    */
   requireTask(`${cfg.task.buildCustomJs}`, `./${cfg.folder.tasks}/`, {
